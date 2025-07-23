@@ -1,12 +1,117 @@
-.auto-card, .auto-sorteado {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: url(https://th.bing.com/th/id/R.441c0594c9ae84861ff7ca085625474e?rik=qECc8eIbAq0WtA&pid=ImgRaw&r=0);
+  background-size: cover;
+
+  color: #000000;
+  text-align: center;
 }
 
-.auto-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+h1 {
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+
+.filtros {
+  display: flex;
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input[type="text"], select {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  color: #000000;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+input[type="text"]:focus, select:focus {
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+
+.auto-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.auto-card {
+  width: 220px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px); 
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  color: #000000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.auto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.auto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.auto-sorteado {
+  margin: 20px auto;
+  padding: 15px;
+  width: 300px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #000000;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.auto-sorteado img {
+  width: 100%;
+  border-radius: 10px;
 }
